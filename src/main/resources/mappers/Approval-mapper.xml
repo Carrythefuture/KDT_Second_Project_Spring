@@ -3,6 +3,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="approval">
+
 	<select id="selectAll" resultType="com.kedu.project.dto.ApprovalDTO">
 	select * from approval_doc
 	</select>
@@ -18,12 +19,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	  </insert>
 	  
 	    <insert id="tempinsert" parameterType="com.kedu.project.dto.ApprovalDTO">
+
 	  insert into approval_doc (seq,writer,title,comments,status,writeDate)
 	  values(approval_seq.nextval,#{writer},#{title},#{comments},#{status},SYSDATE)
 	  
 	  </insert>
 	  
+
 	  <select id="getDetail" parameterType="int" resultType="com.kedu.project.dto.ApprovalDTO">
+
 	  
 	  select * from approval_doc where seq=#{seq}
 	  </select>

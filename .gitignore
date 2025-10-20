@@ -31,6 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+<<<<<<< HEAD
 
 ### GCS json ###
 lyrical-caster-472605-e1-2ea7b2f8501c.json
+=======
+>>>>>>> a31b298270abd679caaf0123e0b841b86e5308a7
